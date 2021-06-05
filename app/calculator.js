@@ -1,20 +1,6 @@
 const express = require("express");
 const app = express();
-
-const ceilBMI = function(bmi) {
-    if(bmi <= 18.4){
-        return "18.4"
-    }else if (bmi <= 24.9){
-        return "24.9"
-    }else if (bmi <= 29.9){
-        return "29.9"
-    }else if (bmi <= 34.9){
-        return "34.9"
-    }else if (bmi <= 39.9){
-        return "39.9"
-    }
-    return "100"
-}
+const { ceilBMI } = require('./helper');
 
 app.get("/", function(req, res){
     res.send("Welcome to BMI calculator, please use \
@@ -50,6 +36,4 @@ app.get("/calculate", function(req, res){
     });
 });
 
-app.listen(3000, function(){
-    console.log("Server is running on port 3000.");
-});
+module.exports = app

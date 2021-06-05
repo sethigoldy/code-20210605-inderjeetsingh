@@ -1,0 +1,26 @@
+{
+    "18.4" :{
+        "Category": "Underweight",
+        "HealthRisk": "Malnutrition"
+    },
+    "24.9" :{
+        "Category": "Normal",
+        "HealthRisk": "Low"
+    },
+    "29.9":{
+        "Category": "Overweight",
+        "HealthRisk": "Enhanced"
+    },
+    "34.9":{
+        "Category": "Moderately obese",
+        "HealthRisk": "Medium"
+    },
+    "39.9":{
+        "Category": "Severely obese",
+        "HealthRisk": "High"
+    },
+    "100":{
+        "Category": "Very severely obese",
+        "HealthRisk": "Very High"
+    }
+}
